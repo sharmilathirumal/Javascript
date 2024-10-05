@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.full-container{
+    width: 30%;
+    border: 1 px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#E5E4E2;
+   
+}
+
+.full-container input{
+background-color: #C0C0C0;
+border: none;
+width: 80%;
+margin: 8%;
+padding: 5%;
+flex-wrap: wrap;
+font-size: 2em;
+}
+
+.keyContainer{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap :20px;
+ width: 80%;
+ margin-left: 3%;
+ margin-bottom: 5%;
+}
+
+.keys{
+    width: 100%;
+    height: 60px;
+    border:none;
+    font-size: 1rem;
+    margin-left: 30%;
+    cursor: pointer;
+    background-color:#E5E4E2;
+}
+
+.keys.clear{
+    color: red;
+}
+
+.keys.operator{
+    color: blue;
+}
+
+.keys.equal{
+    grid-column: span 2;
+    background-color: blue;
+    color: white;
+}
